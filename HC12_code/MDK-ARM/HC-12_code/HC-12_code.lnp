@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"hc-12_code\startup_stm32f103xb.o"
+"hc-12_code\hc12.o"
+"hc-12_code\main.o"
+"hc-12_code\stm32f1xx_it.o"
+"hc-12_code\stm32f1xx_hal_msp.o"
+"hc-12_code\stm32f1xx_hal_gpio_ex.o"
+"hc-12_code\stm32f1xx_hal_tim.o"
+"hc-12_code\stm32f1xx_hal_tim_ex.o"
+"hc-12_code\stm32f1xx_hal.o"
+"hc-12_code\stm32f1xx_hal_rcc.o"
+"hc-12_code\stm32f1xx_hal_rcc_ex.o"
+"hc-12_code\stm32f1xx_hal_gpio.o"
+"hc-12_code\stm32f1xx_hal_dma.o"
+"hc-12_code\stm32f1xx_hal_cortex.o"
+"hc-12_code\stm32f1xx_hal_pwr.o"
+"hc-12_code\stm32f1xx_hal_flash.o"
+"hc-12_code\stm32f1xx_hal_flash_ex.o"
+"hc-12_code\stm32f1xx_hal_exti.o"
+"hc-12_code\stm32f1xx_hal_uart.o"
+"hc-12_code\system_stm32f1xx.o"
+--strict --scatter "HC-12_code\HC-12_code.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HC-12_code.map" -o HC-12_code\HC-12_code.axf
